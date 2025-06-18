@@ -27,35 +27,6 @@ Our framework leverages Bayesian hierarchical modeling to produce improved estim
 - **Flexible Sampling Schemes**: SRS, Stratified, and Poisson sampling
 - **MAR/MNAR Scenarios**: Handles both Missing at Random and Missing Not at Random mechanisms
 
-## Repository Structure
-
-```
-bayesian-small-area-estimation/
-├── stan_models/
-│   ├── poisson-combined.stan          # Main OG method implementation
-│   ├── EMRP-poisson-simp.stan        # EMRP method
-│   ├── MRP-N_c.stan                  # MRP method
-│   └── stan_model_y2_covariate.stan  # Alternative modeling approach
-├── R/
-│   ├── simulation/
-│   │   ├── empre-re.R                # OG method simulations
-│   │   ├── EMPR_predictive.R         # EMRP predictive simulations
-│   │   └── MRP_predictive.R          # MRP predictive simulations
-│   ├── utils/
-│   │   ├── calculate_metrics.R       # Performance metrics
-│   │   └── predictive_new.R          # Helper functions
-│   └── visualization/
-│       └── adv-metrics-plot-mar vs mnar.R  # Results visualization
-├── data/
-│   └── README.md                     # Data generation instructions
-├── results/
-│   └── README.md                     # Results storage structure
-├── docs/
-│   ├── methodology.pdf               # Theoretical framework
-│   └── implementation_guide.md       # Usage instructions
-└── examples/
-    └── simulation_example.R          # Complete workflow example
-```
 
 ## Getting Started
 
